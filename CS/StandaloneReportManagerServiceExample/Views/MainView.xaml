@@ -1,0 +1,45 @@
+﻿<UserControl
+    x:Class="StandaloneReportManagerServiceExample.Views.MainView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" 
+    xmlns:dxr="http://schemas.devexpress.com/winfx/2008/xaml/ribbon" 
+    xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars" 
+    xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+    xmlns:dxrudex="http://schemas.devexpress.com/winfx/2008/xaml/reports/userdesignerextensions"
+    xmlns:viewModels="clr-namespace:StandaloneReportManagerServiceExample.ViewModels"
+    xmlns:reports="clr-namespace:StandaloneReportManagerServiceExample.Reports"   
+    mc:Ignorable="d" d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.DataContext>
+        <viewModels:MainViewModel/>
+    </UserControl.DataContext>
+    <DockPanel>
+        <dxr:RibbonControl DockPanel.Dock="Top" RibbonStyle="Office2010">
+            <dxr:RibbonDefaultPageCategory Caption="defaultCategory">
+                <dxr:RibbonPage Caption="Home">
+                    <dxr:RibbonPageGroup Caption="Tools">
+                        <dxb:BarSplitButtonItem Content="Reports" LargeGlyph="{dx:DXImage Image=Printer_32x32.png}">
+                            <dxmvvm:Interaction.Behaviors>
+                                <dxrudex:ReportManagerBehavior Service="{Binding ElementName=ReportService}" />
+                            </dxmvvm:Interaction.Behaviors>
+                        </dxb:BarSplitButtonItem>
+                    </dxr:RibbonPageGroup>
+                </dxr:RibbonPage>
+            </dxr:RibbonDefaultPageCategory>
+        </dxr:RibbonControl>
+        <ListBox Name="listBox" ItemsSource="{Binding Items}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Name}"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+            <dxmvvm:Interaction.Behaviors>
+                <dxrudex:StandaloneReportManagerService x:Name="ReportService" DataSource="{Binding ElementName=listBox, Path=ItemsSource}">
+                    <dxrudex:PredefinedReport ReportName="Predefined Xtra Report" Type="reports:PredefinedXtraReport"/>
+                </dxrudex:StandaloneReportManagerService>
+            </dxmvvm:Interaction.Behaviors>
+        </ListBox>
+    </DockPanel>
+</UserControl>
