@@ -1,11 +1,10 @@
-﻿Imports System.Windows
-
 Namespace StandaloneReportManagerServiceExample
-    Partial Public Class MainWindow
+
+    Public Partial Class MainWindow
         Inherits DevExpress.Xpf.Ribbon.DXRibbonWindow
 
         Public Sub New()
-            InitializeComponent()
+            Me.InitializeComponent()
         End Sub
     End Class
 End Namespace
