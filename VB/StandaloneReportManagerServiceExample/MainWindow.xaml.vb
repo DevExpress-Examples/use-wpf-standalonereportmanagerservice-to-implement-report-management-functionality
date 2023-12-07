@@ -1,7 +1,9 @@
+Imports DevExpress.Xpf.Core
+
 Namespace StandaloneReportManagerServiceExample
 
     Public Partial Class MainWindow
-        Inherits DevExpress.Xpf.Ribbon.DXRibbonWindow
+        Inherits ThemedWindow
 
         Public Sub New()
             Me.InitializeComponent()
