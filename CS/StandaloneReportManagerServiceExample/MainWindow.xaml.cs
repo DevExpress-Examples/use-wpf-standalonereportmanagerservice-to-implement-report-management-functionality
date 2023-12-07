@@ -1,7 +1,7 @@
-﻿using System.Windows;
+﻿using DevExpress.Xpf.Core;
 
 namespace StandaloneReportManagerServiceExample {
-    public partial class MainWindow : DevExpress.Xpf.Ribbon.DXRibbonWindow {
+    public partial class MainWindow : ThemedWindow {
         public MainWindow() {
             InitializeComponent();
         }
