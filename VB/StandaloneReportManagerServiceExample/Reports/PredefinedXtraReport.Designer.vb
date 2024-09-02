@@ -166,7 +166,7 @@ Namespace StandaloneReportManagerServiceExample.Reports
             Me.Title.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid
             Me.Title.Borders = DevExpress.XtraPrinting.BorderSide.None
             Me.Title.BorderWidth = 1F
-            Me.Title.Font = New System.Drawing.Font("Times New Roman", 24F)
+            Me.Title.Font = New DevExpress.Drawing.DXFont("Times New Roman", 24F)
             Me.Title.ForeColor = System.Drawing.Color.Black
             Me.Title.Name = "Title"
             ' 
@@ -177,7 +177,7 @@ Namespace StandaloneReportManagerServiceExample.Reports
             Me.FieldCaption.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid
             Me.FieldCaption.Borders = DevExpress.XtraPrinting.BorderSide.None
             Me.FieldCaption.BorderWidth = 1F
-            Me.FieldCaption.Font = New System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold)
+            Me.FieldCaption.Font = New DevExpress.Drawing.DXFont("Times New Roman", 10F, DevExpress.Drawing.DXFontStyle.Bold)
             Me.FieldCaption.ForeColor = System.Drawing.Color.Black
             Me.FieldCaption.Name = "FieldCaption"
             ' 
@@ -188,7 +188,7 @@ Namespace StandaloneReportManagerServiceExample.Reports
             Me.PageInfo.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid
             Me.PageInfo.Borders = DevExpress.XtraPrinting.BorderSide.None
             Me.PageInfo.BorderWidth = 1F
-            Me.PageInfo.Font = New System.Drawing.Font("Times New Roman", 8F)
+            Me.PageInfo.Font = New DevExpress.Drawing.DXFont("Times New Roman", 8F)
             Me.PageInfo.ForeColor = System.Drawing.Color.Black
             Me.PageInfo.Name = "PageInfo"
             ' 
@@ -199,7 +199,7 @@ Namespace StandaloneReportManagerServiceExample.Reports
             Me.DataField.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid
             Me.DataField.Borders = DevExpress.XtraPrinting.BorderSide.None
             Me.DataField.BorderWidth = 1F
-            Me.DataField.Font = New System.Drawing.Font("Times New Roman", 8F)
+            Me.DataField.Font = New DevExpress.Drawing.DXFont("Times New Roman", 8F)
             Me.DataField.ForeColor = System.Drawing.Color.Black
             Me.DataField.Name = "DataField"
             ' 
