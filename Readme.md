@@ -26,7 +26,7 @@ This example demonstrates how to use the [StandaloneReportManagerService](https:
 * [WPF Data Grid - Use GridReportManagerService to Implement the Report Management Functionality](https://github.com/DevExpress-Examples/wpf-data-grid-use-gridreportmanagerservice-to-implement-report-management-functionality)
 * [Use MVVM Framework to Create Commands that Manage Documents in the Report Designer](https://github.com/DevExpress-Examples/reporting-wpf-mvvm-manage-report-designer-documents)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=use-wpf-standalonereportmanagerservice-to-implement-report-management-functionality&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=use-wpf-standalonereportmanagerservice-to-implement-report-management-functionality&~~~was_helpful=no)
 
